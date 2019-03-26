@@ -1,8 +1,8 @@
 module.exports = {
-  PORT: 3055,
+  PORT: process.env.PORT,
 
   /* The domain that this website is on */
-  DEFAULT_DOMAIN: 'https://44e050d7.ngrok.io',
+  DEFAULT_DOMAIN: 'https://frozen-brushlands-16834.herokuapp.com/',
 
   /* Neo4j database credential details */
   DB_URI: 'https://hobby-hljjgcdlapbogbkekgjfppcl.dbs.graphenedb.com:24780/db/data/',
