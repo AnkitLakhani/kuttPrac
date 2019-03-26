@@ -9,10 +9,9 @@ module.exports = {
   DB_USERNAME: 'ankitlakhani',
   DB_PASSWORD: 'b.6OXWz3vP4drO.FhYvVF7uhjsTPkNI',
 
-  /* Redis host and port */
-  REDIS_HOST: '127.0.0.1',
-  REDIS_PORT: 6379,
-  REDIS_PASSWORD: '',
+  REDIS_HOST: 'redis-10512.c98.us-east-1-4.ec2.cloud.redislabs.com',
+  REDIS_PORT: 10512,
+  REDIS_PASSWORD: 'qi9Vjk3rGycH66jqErC477VpqYjlfpDJ',
 
   /* The daily limit for each user */
   USER_LIMIT_PER_DAY: 50,
