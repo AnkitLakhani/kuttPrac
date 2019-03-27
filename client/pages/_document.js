@@ -73,7 +73,6 @@ class AppDocument extends Document {
           />
 
           <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer />
-          <script src="/analytics.js" />
         </Head>
         <body style={style}>
           <Main />

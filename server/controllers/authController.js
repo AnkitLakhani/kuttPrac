@@ -114,17 +114,15 @@ exports.signup = async (req, res) => {
   const user = await getUser({ email });
   if (user && user.verified) return res.status(403).json({ error: 'Email is already in use.' });
   const newUser = await createUser({ email, password });
-  const mail = await transporter.sendMail({
+  await transporter.sendMail({
     from: config.MAIL_FROM || config.MAIL_USER,
     to: newUser.email,
     subject: 'Verify your account',
     text: verifyMailText.replace(/{{verification}}/gim, newUser.verificationToken),
     html: verifyEmailTemplate.replace(/{{verification}}/gim, newUser.verificationToken),
   });
-  if (mail.accepted.length) {
-    return res.status(201).json({ email, message: 'Verification email has been sent.' });
-  }
-  return res.status(400).json({ error: "Couldn't send verification email. Try again." });
+
+  return res.status(201).json({ email, message: 'Verification email has been sent.' });
 };
 
 exports.login = ({ user }, res) => {
