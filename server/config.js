@@ -7,7 +7,7 @@ module.exports = {
   /* Neo4j database credential details */
   DB_URI: 'bolt://hobby-hljjgcdlapbogbkekgjfppcl.dbs.graphenedb.com:24787',
   DB_USERNAME: 'ankitlakhani',
-  DB_PASSWORD: 'b.6OXWz3vP4drO.FhYvVF7uhjsTPkNI',,
+  DB_PASSWORD: 'b.6OXWz3vP4drO.FhYvVF7uhjsTPkNI',
 
   REDIS_HOST: 'redis-10512.c98.us-east-1-4.ec2.cloud.redislabs.com',
   REDIS_PORT: 10512,
